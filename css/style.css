@@ -1,0 +1,1023 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+:root {
+    --mainColor: #0B093B
+}
+body {
+    color: #0B093B;
+    scroll-behavior: smooth;
+}
+.container header {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px auto;
+}
+.container header::before {
+    position: absolute;
+    content: '';
+    background-color: #F5F5F5;
+    width: 31.5%;
+    height: 540px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+.container header .box {
+    display: flex;
+    justify-content: space-between;
+}
+.container header .box ul {
+    display: flex;
+    list-style: none;
+}
+.container header ul li {
+    transition: .3s ease-in-out;
+}
+.container header ul li a {
+    color: var(--mainColor);
+}
+.container header ul.menu li {
+    margin: 0 20px;
+}
+.container header ul li:hover {
+    transform: scale(.9);
+}
+.container main .hero {
+    position: relative;
+    width: 65%;
+    top: 50px;
+    color: var(--mainColor);
+    margin: 0 auto;
+}
+.container main .hero .content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.container main .hero .content h2 {
+    font-size: 45px;
+    width: 50%;
+}
+.container main .hero .content div:nth-child(1) p {
+    width: 45%;
+    margin: 30px 0;
+    line-height: 2;
+    font-size: 12px;
+}
+.container main .hero .content a {
+    background-color: #7620FF;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    border: 1px solid transparent;
+}
+.container main .hero .content a:hover {
+    background: none;
+    border: 1px solid #7620FF;
+    color: #7620FF;
+    transition: .3s ease-in-out;
+}
+.container main .hero figure img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.container main .hero figure .dots {
+    position: absolute;
+    top: 35%;
+    right: -50px;
+    z-index: -1;
+}
+.container main .hero figure .dots svg {
+    width: 100px;
+}
+.container main div .wisdom {
+    position: absolute;
+    margin-top: -150px;
+    right: 100px;
+    width: 250px;
+    padding: 16px 8px;
+    background-color: #0B093B;
+    border-radius: 10px;
+}
+.container main div .wisdom::before {
+    content: '"';
+    position: absolute;
+    color: #F2B300;
+    font-size: 80px;
+    top: -28px;
+    left: -15px;
+    transform: rotate(5deg);
+}
+.container main div .wisdom p {
+    width: 90%;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.container main div .wisdom .author {
+    color: #F2B300;
+    text-align: end;
+    font-size: 12px;
+    padding: 0 8%;
+}
+.container .clients {
+    min-height: 25vh;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    width: 100%;
+}
+.container .clients .brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+}
+.container .clients svg {
+    width: 60px;
+}
+.container .services {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+}
+.container .services .content {
+    margin-bottom: 50px;
+}
+.container .services .content h2 {
+    margin-bottom: 10px;
+}
+.container .services .content p {
+    font-size: 15px;
+    width: 55%;
+}
+.container .services .all-services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.container .services .all-services .service {
+    width: 200px;
+    margin: 10px 0
+}
+.container .services .all-services .service h3 {
+    margin: 30px 0;
+}
+.container .services .all-services .service p {
+    line-height: 2;
+}
+.container .creativity {
+    background-color: #F5F5F5;
+    padding: 30px 0;
+    margin: 50px 0;
+}
+.container .start {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+}
+.container .start .content span {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.container .start .content h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.container .start .content p {
+    font-size: 14px;
+    width: 60%;
+    line-height: 1.8;
+}
+.container .start .content .buttons {
+    margin-top: 20px;
+}
+.container .start .content .buttons button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.container .start .content .buttons button.first {
+    background-color: #7620FF;
+    border: 1px solid #7620FF;
+    color: #fff;
+}
+.container .start .content .buttons button.first:hover {
+    border: 1px solid #7620FF;
+    color: #7620FF;
+    background: none;
+}
+.container .start .content .buttons button.second {
+    border: 1px solid #707070;
+    color: #707070;
+}
+.container .start .content .buttons button.second:hover {
+    border: 1px solid #7620FF;
+    color: #7620FF;
+}
+.container .start .images {
+    position: relative;
+    top: -50px;
+}
+.container .start .images img {
+    border-radius: 10px;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0px 0px 15px -2px #333;
+}
+.container .start .images img.one {
+    width: 115px;
+    height: 260px;
+    top: -20px;
+}
+.container .start .images img.two {
+    width: 90px;
+    height: 220px;
+    top: -45px;
+    margin-left: 20px;
+    z-index: 2;
+}
+.container .start .images div:nth-child(2) {
+    position: absolute;
+}
+.container .start .images img.three {
+    width: 70px;
+    height: 80px;
+    top: -30px;
+    margin-left: 50px;
+}
+.container .start .images img.four {
+    width: 90px;
+    height: 120px;
+    top: -20px;
+    margin-left: 15px;
+}
+.container .start .images .dots {
+    position: absolute;
+    top: 18%;
+    right: -50px;
+}
+.container main  .images .dots svg {
+    width: 100px;
+}
+
+.container main .projects {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+}
+.container main .projects .content h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.container main .projects .content p {
+    width: 60%;
+    font-size: 13px;
+    line-height: 1.8;
+}
+.container main .projects .projects-container {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container main .projects .projects-container .project {
+    width: 300px;
+}
+.container main .projects .project figure img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.container main .projects .project figure figcaption {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+}
+.container main .projects .project {
+    margin: 8px 0;
+}
+.container main .projects .project p {
+    font-size: 15px;
+    width: 60%;
+    line-height: 1.7;
+}
+.container main .projects .load-more {
+    text-align: center;
+}
+.container main .projects .load-more a.load {
+    color: #fff;
+    background-color: #7620FF;
+    padding: 8px 14px;
+    border-radius: 15px;
+    font-size: 13px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+.container main .projects .load-more a.load:hover {
+    background: none;
+    border: 1px solid #7620FF;
+    color: #7620FF;
+}
+.other-section {
+    background-color: #F5F5F5;
+    padding: 50px 0;
+    margin: 60px 0;
+}
+.other-section .other {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.other-section .other .content {
+    margin-top: -20px;
+    margin-left: 90px;
+}
+.other-section figure img {
+    width: 250px;
+    height: 340px;
+    margin-top: -20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.other-section .other .content span {
+    font-size: 14px;
+}
+.other-section .other .content h3 {
+    margin: 5px 0 10px 0;
+    font-size: 25px;
+}
+.other-section .other .content p {
+    width: 70%;
+    line-height: 1.8;
+    font-size: 13px;
+}
+.container .other-section .other .content .buttons {
+    margin-top: 20px;
+}
+.container .other-section .other .content .buttons button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.container .other-section .other .content .buttons button.first {
+    background-color: #7620FF;
+    border: 1px solid #7620FF;
+    color: #fff;
+}
+.container .other-section .other .content .buttons button.first:hover {
+    color: #7620FF;
+    border: 1px solid #7620FF;
+    background: none;
+}
+.container .other-section .other .content .buttons button.second {
+    border: 1px solid #707070;
+    color: #707070;
+}
+.container .other-section .other .content .buttons button.second:hover {
+    border: 1px solid #7620FF;
+    color: #7620FF;
+    background: none;
+}
+.container .blog {
+    position: relative;
+    width: 65%;
+    margin: 0 auto;
+}
+.container .blog .content {
+    margin-bottom: 25px;
+}
+.container .blog .content h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.container .blog .content p {
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.container .blog .stories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .blog .stories .story {
+    width: 300px;
+    box-shadow: 0px 0px 15px -10px #333;
+    border-radius: 10px;
+    padding: 20px 45px;
+    margin: 10px 10px 10px 0;
+}
+.container .blog .stories .story span {
+    font-weight: bold;
+    font-size: 16px;
+}
+.container .blog .stories .story p {
+    font-size: 14px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+.container .blog .stories .story strong {
+    font-size: 13px;
+}
+.container .blog .stories .story .category {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #C4FFFF;
+    color: #0B093B;
+    width: 90px;
+    height: 30px;
+    line-height: 2.2;
+    text-align: center;
+    border-radius: 20px;
+    cursor: default;
+}
+
+.container main .what-they-say {
+    background-color: #F5F5F5;
+    padding: 50px 0;
+    margin: 50px 0;
+}
+.container main .what-they-say .say {
+    width: 65%;
+    position: relative;
+    margin: 0 auto;
+}
+.container main .what-they-say .say .content {
+    margin-bottom: 20px;
+}
+.container main .what-they-say .say .content h3 {
+    font-size: 22px;
+}
+.container main .what-they-say .say .content p {
+    margin-top: 15px;
+    line-height: 1.8;
+    font-size: 14px;
+    width: 45%;
+}
+.container main .what-they-say .say .says {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container main .what-they-say .say .a-say {
+    position: relative;
+    background-color: #0B093B;
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 5px
+}
+.container main .what-they-say .say .a-say .double-quotes {
+    position: absolute;
+    top: -34px;
+    width: 90%;
+    text-align: center;
+    color: #F2B300;
+    font-size: 80px;
+}
+.container main .what-they-say .say .a-say p {
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 8px;
+}
+.container main .what-they-say .say .a-say .author {
+    color: #F2B300;
+    font-size: 13px;
+    text-align: end;
+}
+.container main .pricing {
+    width: 65%;
+    position: relative;
+    margin: 0 auto;
+}
+.container main .pricing .content {
+    margin-bottom: 25px;
+}
+.container main .pricing .content h3 {
+    font-size: 24px;
+}
+.container main .pricing .content p {
+    margin: 10px 0;
+    width: 40%;
+    line-height: 1.8;
+    font-size: 13px;
+    font-weight: 500;
+}
+.container main .pricing .prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container main .pricing .prices .price {
+    width: 275px;
+    margin: 50px 0;
+    box-shadow: 0px 0px 15px -10px #333;
+    padding: 20px;
+}
+.container main .pricing .prices .price .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container main .pricing .prices .price .line svg {
+    width: 25px;
+}
+.container main .pricing .prices .price .line span {
+    font-weight: bold;
+}
+.container main .pricing .prices .price .infos {
+    margin: 10px 0;
+}
+.container main .pricing .prices .price .infos h4 {
+    font-size: 18px;
+}
+.container main .pricing .prices .price .infos p {
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 5px;
+    line-height: 1.7;
+}
+.container main .pricing .prices .price ul {
+    list-style: none;
+    font-weight: 500;
+    position: relative;
+    left: 20%;
+    margin: 30px 0;
+}
+.container main .pricing .prices .price ul li {
+    margin: 10px 0;
+
+}
+.container main .pricing .prices .price ul li.checked::before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #49CB86;
+    margin-top: 12px;
+    left: -25px;
+    transform: rotate(-25deg);
+}
+.container main .pricing .prices .price ul li.checked::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 2px;
+    background-color: #49CB86;
+    margin-top: 12px;
+    left: -29px;
+    transform: rotate(45deg);
+}
+.container main .pricing .prices .price button {
+    position: relative;
+    left: 35%;
+    background-color: #7620FF;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.container main .pricing .prices .price button:hover {
+    border: 1px solid #7620FF;
+    background: none;
+    color: #7620FF;
+}
+.container main section:last-child {
+    background-color: #F5F5F5;
+    padding: 50px 0;
+}
+.container main section:last-child .contact {
+    width: 65%;
+    position: relative;
+    margin: 0 auto;
+}
+.container main section:last-child .contact .content {
+    margin-bottom: 30px;
+}
+.container main section:last-child .contact .content h3 {
+    margin-bottom: 20px;
+}
+.container main section:last-child .contact .content p {
+    line-height: 1.8;
+    font-size: 13px;
+    font-weight: 500;
+    width: 45%;
+}
+.container main section:last-child .contact .send {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container main section:last-child .contact .send form input{
+    display: block;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #707070;
+    outline: none;
+    margin-top: 10px;
+    width: 300px;
+}
+.container main section:last-child .contact .send form textarea {
+    background-color: #F5F5F5;
+    border: none;
+    margin: 25px 0;
+    width: 300px;
+    height: 100px;
+    border-bottom: 1px solid #707070;
+    outline: none;
+}
+.container main section:last-child .contact .send form button {
+    background-color: #7620FF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.container main section:last-child .contact .send form button:hover {
+    color: #7620FF;
+    background: none;
+    border: 1px solid #7620FF;
+}
+.container main section:last-child .contact .send form label {
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    top: 25px;
+    color: #707070;
+    pointer-events: none;
+}
+.container main section:last-child .contact .send .images {
+    display: flex;
+    align-items: center;
+}
+.container main section:last-child .contact .send .images img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+.container main section:last-child .contact .send .images div:first-child img {
+    width: 100px;
+    height: 110px;
+    display: block;
+    margin: 10px 0;
+}
+.container main section:last-child .contact .send .images div:first-child img:nth-child(2) {
+    height: 140px;
+}
+.container main section:last-child .contact .send .images div:last-child img {
+    width: 150px;
+    height: 200px;
+    margin-left: 20px;
+}
+.container footer {
+    background-color: #0B093B;
+}
+.container footer .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 65%;
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    padding: 15px 0;
+}
+.container footer .box div {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 5px;
+}
+.container footer .box div span {
+    color: #7620FF;
+    cursor: pointer;
+}
+.container footer .box div button {
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    background: none;
+}
+
+@media(max-width: 991.98px) {
+    .container header ul.menu li {
+        margin: 0 6px
+    }
+    .container main .what-they-say .say .a-say {
+        margin: 0 5px
+    }
+    .container main .hero .content h2 {
+        width: 100%
+    }
+    .container main .hero .content div:nth-child(1) p {
+        width: 100%
+    }
+    .container main div .wisdom {
+        right: -80px
+    }
+    .container .start .images {
+        display: none
+    }
+    .container .start .content {
+        text-align: center
+    }
+    .container .start .content p {
+        width: 100%;
+        margin: 0 auto
+    }
+    .container main .projects .projects-container .project {
+        width: 250px
+    }
+    .container .blog .stories .story {
+        width: 245px
+    }
+    .container main .pricing .prices {
+        justify-content: center
+    }
+    .container main .pricing .prices .price {
+        width: 235px;
+        margin: 50px 15px
+    }
+    .container main section:last-child .contact .send .images {
+        margin-left: 20px
+    }
+    .container main .pricing .content p,
+    .container main section:last-child .contact .content p {
+        width: 80%
+    }
+}
+
+@media(max-width: 767.98px) {
+    .container header {
+        display: block;
+        background: none;
+        margin-top: 0;
+        width: 70%
+    }
+    .container header h2 {
+        padding: 10px 20px;
+    }
+    .container header .box ul {
+        display: none;
+        padding: 0 50px;
+    }
+    .container header .box ul li {
+        margin: 30px 0;
+    }
+    .container header .box ul li a {
+        color: #fff;
+    }
+    .container header .fline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container header .menu-btn {
+        width: 30px;
+        height: 25px;
+        position: relative;
+        right: 20px;
+        top: -5px;
+    }
+    .container header .menu-btn span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background-color: #0B093B;
+        cursor: pointer;
+    }
+    .container .he {
+        background-color: #0B093B !important;
+    }
+    .container .co {
+        background-color: #fff !important;
+    }
+    .container header .box ul.switch {
+        display: block;
+    }
+    .container header .menu-btn span:nth-child(2) {
+        margin-top: 10px;
+    }
+    .container header .menu-btn span:nth-child(3) {
+        margin-top: 20px;
+    }
+    .other-section .other {
+        display: block
+    }
+    .other-section .other .content {
+        margin-top: 0;
+        margin-left: 0
+    }
+    .container main .hero .content{
+        flex-wrap: wrap
+    }
+    .container main .hero .content div:nth-child(1) {
+        margin: 50px 0;
+    }
+    .container main .hero .content div:nth-child(1) h2,
+    .container main .hero .content div:nth-child(1) p {
+        width: 100%;
+    }
+    .container main .hero .content div:nth-child(1) h2 {
+        font-size: 35px;
+    }
+    .container main .hero .content div:nth-child(1) p {
+        font-size: 17px;
+    }
+    .container main div .wisdom {
+        right: 35px;
+    }
+    .container .clients .brands {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .container .clients .brands div {
+        width: 100px;
+    }
+    .container main .projects .projects-container .project {
+        width: 200px
+    }
+    .container main .pricing .prices .price {
+        width: 200px;
+    }
+    .container .blog .stories .story {
+        width: 200px;
+    }
+    .container main section:last-child .contact .send .images {
+        display: none
+    }
+}
+
+@media (max-width: 575.98px) {
+    .container header {
+        display: block;
+        background: none;
+        margin-top: 0;
+    }
+    .container header h2 {
+        padding: 10px 20px;
+    }
+    .container header .box ul {
+        display: none;
+        padding: 0 50px;
+    }
+    .container header .box ul li {
+        margin: 30px 0;
+    }
+    .container header .box ul li a {
+        color: #fff;
+    }
+    .container header .fline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container header .menu-btn {
+        width: 30px;
+        height: 25px;
+        position: relative;
+        right: 20px;
+        top: -5px;
+    }
+    .container header .menu-btn span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background-color: #0B093B;
+        cursor: pointer;
+    }
+    .container .he {
+        background-color: #0B093B !important;
+    }
+    .container .co {
+        background-color: #fff !important;
+    }
+    .container header .box ul.switch {
+        display: block;
+    }
+    .container header .menu-btn span:nth-child(2) {
+        margin-top: 10px;
+    }
+    .container header .menu-btn span:nth-child(3) {
+        margin-top: 20px;
+    }
+    .container main .hero .content{
+        flex-wrap: wrap
+    }
+    .container main .hero .content div:nth-child(1) {
+        margin: 50px 0;
+    }
+    .container main .hero .content div:nth-child(1) h2,
+    .container main .hero .content div:nth-child(1) p {
+        width: 100%;
+    }
+    .container main .hero .content div:nth-child(1) h2 {
+        font-size: 35px;
+    }
+    .container main .hero .content div:nth-child(1) p {
+        font-size: 17px;
+    }
+    .container main div .wisdom {
+        right: 0;
+    }
+    .container .clients .brands {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .container .clients .brands div {
+        width: 100px;
+    }
+    .container .services .content p {
+        line-height: 1.8;
+    }
+    .container .services .all-services .service {
+        margin: 20px auto;
+    }
+    .container .start .images {
+        display: none;
+    }
+    .container main .other-section {
+        height: auto;
+        padding: 50px 0;
+    }
+    .container main .other-section .other figure {
+        display: none;
+    }
+    .other-section .other .content h3 {
+        font-size: 23px;
+    }
+    .container main .what-they-say .say .content {
+        padding: 0 10px;
+    }
+    .container main .what-they-say .say .says {
+        flex-wrap: wrap;
+    }
+    .container main .what-they-say .say .says .a-say {
+        margin: 10px 5px;
+    }
+    .other-section .other .content {
+        margin: 0;
+    }
+    .container main section:last-child .contact .send .images {
+        display: none;
+    }
+    .container .services .content p,
+    .container main .what-they-say .say .content p ,
+    .container main .pricing .content p,
+    .container main section:last-child .contact .content p,
+    .container .start .content p,
+    .container main .projects .content p,
+    .other-section .other .content p,
+    .container .blog .content p  {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
